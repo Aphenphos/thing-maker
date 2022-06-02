@@ -1,6 +1,7 @@
-// grab DOM elements
 
-// set event listeners
-    // get info from user input
-    // use user input to update state
-    // update DOM to reflect the new state
+const topText = document.getElementById('top-text');
+const topTextDisplay = document.getElementById('top-text-display');
+
+const bottomText = document.getElementById('bottom-text');
+const bottomTextDisplay = document.getElementById('bottom-text-display');
+

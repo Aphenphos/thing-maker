@@ -12,12 +12,6 @@ body {
     padding-bottom: 30px;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    background-color: var(--header-background);
-}
-
 footer {
     position: fixed;
     bottom: 0;
