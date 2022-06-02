@@ -22,5 +22,9 @@ bottomText.addEventListener('input', () => {
 imageSelector.addEventListener('change', () => {
     const src = 'assets/' + imageSelector.value;
     selectedImage.src = src;
-    console.log(`picture changed to ${selectedImage.src}`);
+});
+
+backgroundSelector.addEventListener('input', () => {
+    const src = 'assets/' + backgroundSelector.value;
+    selectedBackground.src = src;
 });
