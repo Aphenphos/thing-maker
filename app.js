@@ -12,11 +12,15 @@ const backgroundSelector = document.getElementById('background-selector');
 const selectedBackground = document.getElementById('selected-background');
 
 topText.addEventListener('input', () => {
-    console.log('text changing');
     topTextDisplay.textContent = topText.value;
 });
 
 bottomText.addEventListener('input', () => {
-    console.log('text changing');
     bottomTextDisplay.textContent = bottomText.value;
+});
+
+imageSelector.addEventListener('change', () => {
+    const src = 'assets/' + imageSelector.value;
+    selectedImage.src = src;
+    console.log(`picture changed to ${selectedImage.src}`);
 });
