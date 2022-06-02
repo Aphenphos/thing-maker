@@ -28,3 +28,12 @@ backgroundSelector.addEventListener('input', () => {
     const src = 'assets/' + backgroundSelector.value;
     selectedBackground.src = src;
 });
+
+const exportButton = documnet.getElementById('export-button');
+exportButton.addEventListener('click', async () => {
+    const dataUrl = await domtoimage.toPng(character);
+    const link = document.createElement('a');
+    link.download = nameInput.value + '.png';
+    link.href = dataUrl;
+    link.click();
+  });
