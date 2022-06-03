@@ -11,16 +11,54 @@
 
 <body>
     <header>
-        <img src="assets/html_css_js.png">
-        <h1>Web UI Project</h1>
+        <h1>Early 2000's Meme Maker</h1>
     </header>
 
     <main>
+    <div id ="user-input">
+        <label>Top Text
+            <input type="text" id="top-text"></input>
+        </label>
+        <label>Bottom Text
+            <input type="text" id="bottom-text"></input>
+        </label>
+        <label> Picture
+        <select id = "image-selector">
+            <option value ="1.jpg">1</option>
+            <option value ="2.jpg">2</option>
+            <option value ="3.jpg">3</option>
+            <option value ="4.jpg">4</option>
+            <option value ="5.jpg">5</option>
+        </select>
+    </label>
+    <label>background
+        <select id = "background-selector">
+            <option value ="b1.jpg">1</option>
+            <option value ="b2.png">2</option>
+            <option value ="b3.jpg">3</option>
+        </select>
+    </label>
+    <label>Theme Selector
+        <select id = "theme-selector">
+        <option value ="t1">QuickScoped</option>
+        <option value ="t2">Doritos/MtnDew</option>
+    </select>
+    </label>
+    <button id="export-button">Save</button>
+    </div>
+
+    <div id ="display">
+        <h1 id="top-text-display">Top Text</h1>
+        <h1 id="bottom-text-display">Bottom Text</h1>
+        <img id="selected-background" src="assets/b1.jpg">
+        <img id="selected-image" src="assets/1.jpg">
+        <img id="selected-theme"  class = "t2" src="assets/t1.gif">
+    </div>
 
     </main>
 
     <footer>&copy;2021 Aspiring Software Developer</footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/src/dom-to-image.min.js"></script>
     <script type="module" src="app.js"></script>
 </body>
 

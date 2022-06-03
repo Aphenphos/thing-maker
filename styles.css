@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 
 :root {
-    --background: rgb(224, 234, 247);
+    --background: rgb(158, 157, 70);
     --header-background: white;
     --footer-background: rgb(243, 242, 242);
 }
@@ -10,12 +10,6 @@ body {
     font-family: 'Hubballi', cursive;
     background-color: var(--background);
     padding-bottom: 30px;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    background-color: var(--header-background);
 }
 
 footer {
@@ -28,3 +22,65 @@ footer {
     justify-content: flex-end;
     background-color: var(--footer-background);
 }
+
+#user-input {
+    display: flex;
+    flex-direction: row;
+}
+
+#display {
+    display: flex;
+}
+
+#selected-image {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    padding-left: 60px;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+#selected-background{
+    height: 720px;
+    width: 720px;
+    position: absolute;
+    z-index: 0;
+}
+
+#top-text-display {
+    position: absolute;
+    padding-left: 300px;
+    z-index: 2;
+    padding-top: 50px;
+}
+
+#bottom-text-display {
+    position: absolute;
+    padding-left: 300px;
+    padding-top: 600px;
+    z-index: 2;
+}
+
+#export-button {
+    height: 30px;
+    width:60px;
+}
+
+.t1 {
+    opacity: 5%;
+    height: 600px;
+    width: 600px;
+}
+
+.t2 {
+    opacity: 60%;
+    height: 710px;
+    width: 710px;
+}
+
+
+#selected-theme {
+    z-index: 1;
+}
+
