@@ -43,7 +43,7 @@ const display = document.getElementById('display');
 const exportButton = document.getElementById('export-button');
 
 exportButton.addEventListener('click', async () => {
-    console.log(display);
+
     const dataUrl = await domtoimage.toPng(display);
     const link = document.createElement('a');
     link.download = topText.value + '.png';

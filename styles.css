@@ -57,7 +57,7 @@ footer {
 #bottom-text-display {
     position: absolute;
     padding-left: 300px;
-    padding-top: 660px;
+    padding-top: 600px;
     z-index: 2;
 }
 
@@ -66,16 +66,16 @@ footer {
     width:60px;
 }
 
-.t2 {
+.t1 {
     opacity: 5%;
     height: 600px;
     width: 600px;
 }
 
-.t1 {
+.t2 {
     opacity: 60%;
-    height: 800px;
-    width: 800px;
+    height: 710px;
+    width: 710px;
 }
 
 
