@@ -1,4 +1,4 @@
-Make most things hug left Have huge pic on the right 
+Input along the top image right below
 
 Input title/name
 

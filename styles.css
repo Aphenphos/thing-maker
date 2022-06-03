@@ -23,4 +23,63 @@ footer {
     background-color: var(--footer-background);
 }
 
+#user-input {
+    display: flex;
+    flex-direction: row;
+}
+
+#display {
+    display: flex;
+}
+
+#selected-image {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    padding-left: 60px;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+#selected-background{
+    height: 720px;
+    width: 720px;
+    position: absolute;
+    z-index: 0;
+}
+
+#top-text-display {
+    position: absolute;
+    padding-left: 300px;
+    z-index: 2;
+}
+
+#bottom-text-display {
+    position: absolute;
+    padding-left: 300px;
+    padding-top: 660px;
+    z-index: 2;
+}
+
+#export-button {
+    height: 30px;
+    width:60px;
+}
+
+.t2 {
+    opacity: 5%;
+    height: 600px;
+    width: 600px;
+}
+
+.t1 {
+    opacity: 60%;
+    height: 800px;
+    width: 800px;
+}
+
+
+#selected-theme {
+    z-index: 1;
+}
 

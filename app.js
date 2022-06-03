@@ -11,6 +11,9 @@ const selectedImage = document.getElementById('selected-image');
 const backgroundSelector = document.getElementById('background-selector');
 const selectedBackground = document.getElementById('selected-background');
 
+const themeSelector = document.getElementById('theme-selector');
+const selectedTheme = document.getElementById('selected-theme');
+
 topText.addEventListener('input', () => {
     topTextDisplay.textContent = topText.value;
 });
@@ -29,11 +32,21 @@ backgroundSelector.addEventListener('input', () => {
     selectedBackground.src = src;
 });
 
-const exportButton = documnet.getElementById('export-button');
+themeSelector.addEventListener('input', () => {
+    const src = 'assets/' + themeSelector.value + '.gif';
+    selectedTheme.src = src;
+    selectedTheme.classList.add(themeSelector.value);
+    console.log(themeSelector.value);
+});
+
+const display = document.getElementById('display');
+const exportButton = document.getElementById('export-button');
+
 exportButton.addEventListener('click', async () => {
-    const dataUrl = await domtoimage.toPng(character);
+    console.log(display);
+    const dataUrl = await domtoimage.toPng(display);
     const link = document.createElement('a');
-    link.download = nameInput.value + '.png';
+    link.download = topText.value + '.png';
     link.href = dataUrl;
     link.click();
-  });
+});
