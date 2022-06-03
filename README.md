@@ -1,12 +1,19 @@
-Input along the top image right below
+Input along the top image right below general design
 
-Input title/name
+State - Text input
+Event - Changes Top Text
 
-Input dropdown menu image
+State - Text input
+Event - Changes Bottom Text
 
-Input bottom text
+State - Dropdown menu
+Event - Dropdown of selectable images
 
-Input theme dropdown menu
+State - Dropdown menu
+Event - Dropdown of selectable backgrounds
+
+State - Dropdown menu
+Event - Dropdown of selectable theme gifs
 
 
 

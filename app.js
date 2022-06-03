@@ -42,7 +42,7 @@ themeSelector.addEventListener('input', () => {
 const display = document.getElementById('display');
 const exportButton = document.getElementById('export-button');
 
-exportButton.addEventListener('click', async () => {
+exportButton.addEventListener('click', async() => {
 
     const dataUrl = await domtoimage.toPng(display);
     const link = document.createElement('a');
